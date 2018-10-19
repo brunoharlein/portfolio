@@ -96,16 +96,96 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+   /*************************************** mobile class */
    /* utility class */
+
+   .textCenter {
+     text-align: center;
+   }
+   .borderHeaderP {
+     width: 95%;
+     margin: auto;
+     text-align: center;
+     border: 1px solid grey;
+     padding: 0.5em;
+   }
+   .widthMain {
+     width: 95vw;
+     margin: auto;
+     /* background-color: pink; */
+   }
+   main article {
+     width: 45%;
+     margin: auto;
+     padding: 0.5em;
+     /* background-color: yellow; */
+   }
+   .displayWrap {
+     display: flex;
+     flex-wrap: wrap;
+   }
+   .displaySpaceAr {
+     display: flex;
+     justify-content: space-around;
+   }
+   #marginBottom {
+     margin-bottom: 0.8em;
+   }
+   main img {
+     width: 100%;
+     height: auto;
+     margin: 0.5em 0 0.5em 0;
+   }
+   .articleProject {
+     width: 95%;
+   }
 
 
    /* commun rules */
-
-
+    .desktopOnly {
+      display: none;
+    }
+    .tabOnly {
+      display: none;
+    }
+    h1, h2, h3, h4, h5, h6, p {
+      margin: 0;
+    }
+    i {
+      color: black;
+    }
+    header {
+      margin: 1.5em 0 1.5em 0;
+    }
+    footer {
+      margin-top: 4.5em;
+    }
+    main a i:hover {
+      box-shadow: 5px 5px 3px grey;
+      color: white;
+      background-color: black;
+    }
+    .textDecoration {
+      list-style: none;
+      margin-top: 1.5em;
+    }
+    li i {
+      margin-bottom: 0.3em;
+    }
    /* header class */
-
-
    /* main class */
+
+   @media screen and (min-width: 550px){
+
+     .mobileOnly {
+       display: none;
+     }
+     .tabOnly {
+       display: block;
+     }
+
+   }
 
 
 

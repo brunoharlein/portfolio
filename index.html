@@ -12,7 +12,6 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -22,61 +21,66 @@
   <!-- start nav  -->
   <nav>
     <!-- nav desktop -->
-    <ul id="desktopOnly" class="nav nav-pills">
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">Accueil</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="projets.html">Projets</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="presentation.html">Présentation</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="photos.html">Photos</a>
-      </li>
-
-    </ul>
+    <div class="desktopOnly">
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projets.html">Projets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="presentation.html">Présentation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="photos.html">Photos</a>
+        </li>
+      </ul>
+    </div>
 
     <!-- nav tab  -->
-    <div id="tabOnly" class="nav nav-pills nav-justified">
-      <a class="nav-item nav-link" href="index.html">Accueil</a>
-      <a class="nav-item nav-link" href="projets.html">Projets</a>
-      <a class="nav-item nav-link" href="contact.html">Contact</a>
-      <a class="nav-item nav-link" href="presentation.html">Présentation</a>
-      <a class="nav-item nav-link" href="photos.html">Photos</a>
+    <div class="tabOnly">
+      <div class="nav nav-pills nav-justified">
+        <a class="nav-item nav-link" href="index.html">Accueil</a>
+        <a class="nav-item nav-link" href="projets.html">Projets</a>
+        <a class="nav-item nav-link" href="contact.html">Contact</a>
+        <a class="nav-item nav-link" href="presentation.html">Présentation</a>
+        <a class="nav-item nav-link" href="photos.html">Photos</a>
+      </div>
     </div>
 
     <!-- nav mobile -->
-    <div id="mobileOnly" class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <img src="img/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="logo">
-        Bruno.H
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="projets.html">Projets</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="presentation.html">Présentation</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="photos.html">Photos</a>
-          </li>
-        </ul>
+    <div class="mobileOnly">
+      <div class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="logo">
+          Bruno.H
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Accueil <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projets.html">Projets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="presentation.html">Présentation</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="photos.html">Photos</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </nav>
@@ -85,11 +89,11 @@
   <!-- start header  -->
   <header>
     <!-- h1 & h2 -->
-    <div class="">
+    <div class="textCenter">
       <h1>Bruno Harlein</h1>
-      <h2>Développeur Web Junior</h2>
+      <h2 id="marginBottom">Développeur Web Junior</h2>
     </div>
-    <div class="">
+    <div class="borderHeaderP">
       <p>Développeur Web Junior de 39 ans, passionné par ce domaine depuis toujours.<br>
         Je suis constamment à la recherche de nouvelles techniques pour approfondir mes connaissances. </p>
     </div>
@@ -97,36 +101,32 @@
   <!-- end header -->
 
   <!-- start main -->
-  <main>
-    <article class="">
-      <h2>Présentation</h2>
-      <a href="presentation.html"><i class="fas fa-user-edit"></i></a>
+  <main class="widthMain displayWrap">
+    <article class="textCenter">
+      <a href="presentation.html"><i class="fas fa-user-edit fa-5x"></i></a>
     </article>
-    <article class="">
-      <h2>Projets</h2>
-      <a href="projets.html"><i class="fas fa-laptop"></i></a>
+    <article class="textCenter">
+      <a href="projets.html"><i class="fas fa-laptop fa-5x"></i></a>
     </article>
-    <article class="">
-      <h2>Contact</h2>
-      <a href="contact.html"><i class="fas fa-file-signature"></i></a>
+    <article class="textCenter">
+      <a href="contact.html"><i class="far fa-envelope fa-5x"></i></a>
     </article>
-    <article class="">
-      <h2>Photos</h2>
-      <a href="photos.html"><i class="fas fa-camera"></i></a>
+    <article class="textCenter">
+      <a href="photos.html"><i class="fas fa-camera fa-5x"></i></a>
     </article>
   </main>
   <!-- end main -->
 
   <!-- start footer -->
   <footer>
-    <div class="">
-      <a href="https://twitter.com/brunoharlein"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.linkedin.com/in/harlein-bruno-76012635/"><i class="fab fa-linkedin-in"></i></a>
-      <a href="https://github.com/brunoharlein"><i class="fab fa-github-alt"></i></a>
+    <div class="displaySpaceAr">
+      <a href="https://twitter.com/brunoharlein" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="https://www.linkedin.com/in/harlein-bruno-76012635/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+      <a href="https://github.com/brunoharlein" target="_blank"><i class="fab fa-github-alt fa-2x"></i></a>
     </div>
-    <div id="desktopOnly" class="">
-      <a href="https://500px.com/brunoharlein"><i class="fab fa-500px"></i></a>
-      <a href="https://www.facebook.com/brunoharleinphotographe/"><i class="fab fa-facebook-f"></i></a>
+    <div class="desktopOnly">
+      <a href="https://500px.com/brunoharlein" target="_blank"><i class="fab fa-500px fa-2x"></i></a>
+      <a href="https://www.facebook.com/brunoharleinphotographe/" target="_blank"><i class="fab fa-facebook-f fa-2x"></i></a>
     </div>
   </footer>
   <!-- end footer -->
