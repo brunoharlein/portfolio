@@ -107,19 +107,26 @@ textarea {
      width: 95%;
      margin: auto;
      text-align: center;
-     border: 1px solid grey;
-     padding: 0.5em;
+     /* border: 1px solid grey;
+     padding: 0.5em; */
    }
    .widthMain {
-     width: 95vw;
+     width: 95%;
+     height: 60%;
      margin: auto;
-     /* background-color: pink; */
+     /* background-color: yellow; */
+   }
+   .mainAuto {
+     width: 95%;
+     height: auto;
+     margin: auto;
    }
    main article {
-     width: 45%;
      margin: auto;
-     padding: 0.5em;
-     /* background-color: yellow; */
+     width: 44%;
+     height: 44%;
+     padding: 1em;
+     border: 1px solid grey;
    }
    .displayWrap {
      display: flex;
@@ -139,15 +146,35 @@ textarea {
    }
    .articleProject {
      width: 95%;
+     border: 2px solid grey;
+   }
+   .contact {
+     padding-top: 1.5em;
+     width: 60%;
+     height: 60%;
+     margin: auto;
+     /* background-color: pink; */
    }
 
 
    /* commun rules */
+   body {
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+   }
     .desktopOnly {
       display: none;
     }
     .tabOnly {
       display: none;
+    }
+    h1 {
+      font-size: 3em;
+    }
+    h1, h2{
+      font-family: 'Permanent Marker', cursive;
     }
     h1, h2, h3, h4, h5, h6, p {
       margin: 0;
@@ -158,13 +185,8 @@ textarea {
     header {
       margin: 1.5em 0 1.5em 0;
     }
-    footer {
-      margin-top: 4.5em;
-    }
     main a i:hover {
-      box-shadow: 5px 5px 3px grey;
-      color: white;
-      background-color: black;
+      color: #33AF84;
     }
     .textDecoration {
       list-style: none;
@@ -172,6 +194,14 @@ textarea {
     }
     li i {
       margin-bottom: 0.3em;
+    }
+    footer {
+      /* height: 10%; */
+      border-top: 2px solid grey;
+      background-color: black;
+    }
+    footer i {
+      color: #33AF84;
     }
    /* header class */
    /* main class */
