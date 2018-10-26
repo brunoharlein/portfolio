@@ -136,6 +136,7 @@ main article {
   display: flex;
   justify-content: center;
 }
+
 .AIC {
   display: flex;
   justify-content: center;
@@ -166,6 +167,11 @@ main img {
   /* background-color: pink; */
 }
 
+.imgPresentation {
+  width: 20%;
+  height: auto;
+}
+
 /* commun rules */
 body {
   height: 100vh;
@@ -188,6 +194,10 @@ h1 {
 
 h1, h2 {
   font-family: 'Permanent Marker', cursive;
+}
+
+h3, h4, h5, h6, p, a {
+  font-family: 'Montserrat', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -275,10 +285,6 @@ footer i {
 .zoom:hover {
   transform: scale(1.5);
 }
-.imgPresentation {
-  width: 23%;
-  height: auto;
-}
 
 /* header class */
 /* main class */
@@ -289,6 +295,78 @@ footer i {
 
   .tabOnly {
     display: block;
+  }
+
+  .nav {
+    background-color: black;
+    border-bottom: 2px solid grey;
+  }
+
+  .nav-link {
+    color: #33AF84;
+  }
+
+  .nav-link:hover {
+    color: white;
+  }
+
+  .borderBottom {
+    border-bottom: 2px solid grey;
+    margin-bottom: 1em;
+  }
+
+  .widthMain {
+    width: 98%;
+    height: 50%;
+    margin: auto;
+    /* background-color: yellow; */
+  }
+
+  main article {
+    margin: auto;
+    width: 30%;
+    height: 45%;
+    padding: 1em;
+    border: 3px solid grey;
+  }
+
+  .zoom:hover {
+    transform: scale(1);
+  }
+
+  .imgBorder {
+    border: 2px solid grey;
+  }
+
+  .imgProfilePresentation {
+    width: 30%;
+    height: auto;
+  }
+
+  .DFJCSA {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #marginTop {
+    margin-top: 2em;
+  }
+
+  .imgPresentation {
+    width: 10%;
+    height: auto;
+  }
+
+  .imgphotos {
+    width: 45%;
+    height: auto;
+    margin: 0.5em;
+  }
+
+  .DWFW {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 
