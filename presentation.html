@@ -11,8 +11,8 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Permanent+Marker" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Permanent+Marker" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -87,63 +87,58 @@
   </nav>
   <!-- end nav -->
 
-  <!-- start header  -->
-  <header class="textCenter">
-    <!-- h1 & h2 -->
-    <div class="borderBottom">
+  <!-- start header -->
+  <header>
+    <div class="textCenter borderBottom">
       <h1>Bruno Harlein</h1>
       <h2 id="marginBottom">Développeur Web Junior</h2>
-    </div>
-    <div id="marginBottom" class="borderHeaderP">
-      <p>Développeur Web Junior, passionné par ce domaine depuis toujours.<br>
-        Je suis constamment à la recherche de nouvelles techniques pour approfondir mes connaissances. </p>
-    </div>
-    <div class="">
-      <h3>Me découvrir</h3>
     </div>
   </header>
   <!-- end header -->
 
   <!-- start main -->
-  <div class="desktopFlexMain">
-  <main class="widthMain displayWrap">
-    <article id="marginBottom" class="textCenter">
-      <a href="presentation.html"><i class="fas fa-user fa-5x"></i></a>
-      <p>Présentation</p>
-    </article>
-    <article id="marginBottom" class="textCenter">
-      <a href="projets.html"><i class="far fa-file-code fa-5x"></i></a>
-      <p>Projets</p>
-    </article>
-    <article id="marginBottom" class="textCenter">
-      <a href="contact.html"><i class="far fa-envelope fa-5x"></i></a>
-      <p>Contact</p>
-    </article>
-    <article id="marginBottom" class="textCenter">
-      <a href="photos.html"><i class="fas fa-camera fa-5x"></i></a>
-      <p>Photos</p>
-    </article>
+  <main>
+    <section id="marginBottom" class="borderHeaderP">
+      <h4 id="marginBottom">PRÉSENTATION</h4>
+      <p>Compétences, passions, ma vie, c'est ici !</p>
+    </section>
+    <div id="marginTop" class="DFJCSA">
+      <div class="imgProfilePresentation">
+        <img src="img/bruno.jpg" alt="moi en photo">
+      </div>
+      <section class="textCenter">
+        <h4 id="marginBottom">MES COMPÉTENCES</h4>
+        <p id="marginBottom" class="box"><i class="fab fa-html5 fa-5x"></i><i class="fab fa-css3-alt fa-5x"></i><i class="fab fa-php fa-5x"></i><i class="fab fa-js-square fa-5x"></i><i class="fab fa-wordpress-simple fa-5x"></i><i class="fab fa-github fa-5x"></i></p>
+        <hr class="desktopNone">
+      </section>
+    </div>
+    <div class="">
+      <section class="textCenter">
+        <h4 id="marginBottom">MAIS AUSSI</h4>
+        <div class="displaySpaceAr">
+          <img class="imgPresentation" src="img/boot.svg" alt="logo bootstrap">
+          <img class="imgPresentation" src="img/sql.png" alt="logo sql">
+        </div>
+        <hr class="">
+      </section>
+      <section class="textCenter">
+        <h4 id="marginBottom">POUR FINIR</h4>
+        <div class="displaySpaceAr">
+          <img class="imgPresentation" src="img/atom.png" alt="logo atom">
+          <img class="imgPresentation" src="img/light.jpg" alt="logo lightroom">
+          <img class="imgPresentation" src="img/photoshop.png" alt="logo photoshop">
+        </div>
+        <hr class="">
+      </section>
+    </div>
+
+      <section class="textCenter">
+        <h4 id="marginBottom">DIVERS</h4>
+        <p>Bruno Harlein 39 ans, développeur web junior et papa de deux enfants.<br>
+          Je suis également photographe depuis plus de 5 ans. J'enseigne aussi les arts martiaux depuis plus de 20 ans.<br></p>
+      </section>
   </main>
   <!-- end main -->
-  <!-- start main desktop -->
-  <main class="desktopOnly">
-    <div class="widthMain displaySpaceAr">
-      <article class="textCenter">
-        <a href="https://github.com/brunoharlein" target="_blank"><i class="fab fa-github-alt fa-5x"></i></a>
-        <p>GitHub</p>
-      </article>
-      <article class="textCenter">
-        <a href="https://twitter.com/brunoharlein" target="_blank"><i class="fab fa-twitter fa-5x"></i></a>
-        <p>Twitter</p>
-      </article>
-      <article class="textCenter">
-        <a href="https://500px.com/brunoharlein" target="_blank"><i class="fab fa-500px fa-5x"></i></a>
-        <p>500px</p>
-      </article>
-    </div>
-  </main>
-</div>
-  <!-- end main desktop -->
 
   <!-- start footer -->
   <footer>
@@ -162,6 +157,8 @@
     </div>
   </footer>
   <!-- end footer -->
+
+
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
