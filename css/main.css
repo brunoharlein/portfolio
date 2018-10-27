@@ -92,7 +92,7 @@ textarea {
 .textCenter {
   text-align: center;
 }
-
+/* border header P */
 .borderHeaderP {
   width: 95%;
   margin: auto;
@@ -100,65 +100,57 @@ textarea {
   /* border: 1px solid grey;
      padding: 0.5em; */
 }
-
 .widthMain {
   width: 95%;
   height: 60%;
   margin: auto;
   /* background-color: yellow; */
 }
-
 .mainAuto {
   width: 95%;
   height: auto;
   margin: auto;
 }
-
+/* size article and border  */
 main article {
   margin: auto;
-  width: 44%;
-  height: 44%;
+  width: 170px;
+  height: auto;
   padding: 1em;
   border: 1px solid grey;
 }
-
 .displayWrap {
   display: flex;
   flex-wrap: wrap;
 }
-
 .displaySpaceAr {
   display: flex;
   justify-content: space-around;
 }
-
 .DFJCS {
   display: flex;
   justify-content: center;
 }
-
 .AIC {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 #marginBottom {
   margin-bottom: 0.8em;
 }
-
+/* size image main */
 main img {
   width: 100%;
   height: auto;
   margin: 0.5em 0 0.5em 0;
 }
-
+/* section projet article */
 .articleProject {
   margin-top: 1em;
   width: 95%;
   border: 2px solid grey;
 }
-
 .contact {
   padding-top: 1.5em;
   width: 60%;
@@ -166,77 +158,63 @@ main img {
   margin: auto;
   /* background-color: pink; */
 }
-
+/* image presentation user */
 .imgPresentation {
   width: 20%;
   height: auto;
 }
 
-/* commun rules */
+/**************************************** commun rules */
 body {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
 .desktopOnly {
   display: none;
 }
-
 .tabOnly {
   display: none;
 }
-
 h1 {
   font-size: 3em;
 }
-
 h1, h2 {
   font-family: 'Permanent Marker', cursive;
 }
-
 h3, h4, h5, h6, p, a {
   font-family: 'Montserrat', sans-serif;
 }
-
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
-
 i {
   color: black;
 }
-
 header {
   margin: 1.5em 0 1.5em 0;
 }
-
 main a i:hover {
   color: #33AF84;
 }
-
 .textDecoration {
   list-style: none;
   margin-top: 1.5em;
 }
-
 li i {
   margin-bottom: 0.3em;
 }
-
 footer {
   /* height: 10%; */
   margin-top: 10%;
   border-top: 2px solid grey;
   background-color: black;
 }
-
 footer i {
   color: #33AF84;
 }
-
-/* buton */
+/************************ buton */
 .button {
   display: inline-block;
   border-radius: 4px;
@@ -251,14 +229,12 @@ footer i {
   cursor: pointer;
   margin: 5px;
 }
-
 .button span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.8s;
 }
-
 .button span:after {
   content: '\00bb';
   position: absolute;
@@ -267,21 +243,18 @@ footer i {
   right: -20px;
   transition: 0.5s;
 }
-
 .button:hover span {
   padding-right: 25px;
 }
-
 .button:hover span:after {
   opacity: 1;
   right: 0;
 }
-
+/* zoom picture projet section mobile */
 .zoom {
   transition: transform .4s;
   margin: 0 auto;
 }
-
 .zoom:hover {
   transform: scale(1.5);
 }
@@ -292,81 +265,176 @@ footer i {
   .mobileOnly {
     display: none;
   }
-
   .tabOnly {
     display: block;
   }
-
+/* change spec nav bootstrap */
   .nav {
     background-color: black;
     border-bottom: 2px solid grey;
   }
-
   .nav-link {
     color: #33AF84;
   }
-
   .nav-link:hover {
     color: white;
   }
+  /* end change spec nav bootstrap */
 
+/* border bottom for title */
   .borderBottom {
     border-bottom: 2px solid grey;
     margin-bottom: 1em;
   }
-
+/* width size for tab mode */
   .widthMain {
-    width: 98%;
-    height: 50%;
+    width: 80%;
+    height: auto;
     margin: auto;
     /* background-color: yellow; */
   }
-
+/* article size for tab mode */
   main article {
-    margin: auto;
-    width: 30%;
-    height: 45%;
-    padding: 1em;
+    /* margin: 1em 0 1em 0; */
+    width: 205px;
+    height: auto;
+    padding: auto;
     border: 3px solid grey;
   }
-
+/* end zoom picture projet tab mode */
   .zoom:hover {
     transform: scale(1);
   }
-
   .imgBorder {
     border: 2px solid grey;
   }
-
+/* picture size presentation */
   .imgProfilePresentation {
     width: 30%;
     height: auto;
   }
-
   .DFJCSA {
     display: flex;
     justify-content: space-around;
   }
-
   #marginTop {
     margin-top: 2em;
   }
-
+/* logo picture section presentation */
   .imgPresentation {
     width: 10%;
     height: auto;
   }
-
+/* picture size section photos */
   .imgphotos {
     width: 45%;
     height: auto;
     margin: 0.5em;
   }
-
   .DWFW {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .desktopOnly {
+    display: block;
+  }
+  .tabDesktop {
+    display: none;
+  }
+  .secondFooter {
+    width: 50%;
+    margin: auto;
+    /* background-color: yellow; */
+  }
+  main article {
+    margin: auto;
+    width: 180px;
+    height: auto;
+    padding: auto;
+    border-radius: 10px;
+    box-shadow: 3px 2px 2px #33AF84;
+  }
+  .widthMain {
+    width: 98%;
+    /* height: 70%; */
+    margin: auto;
+    /* background-color: yellow; */
+  }
+  .desktopFlexMain {
+    height: 70vh;
+    width: 95vw;
+    margin: auto;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  /* size picture section presentation */
+  .imgProfilePresentation {
+    width: 20%;
+    height: auto;
+  }
+  .box {
+    border: 1px solid grey;
+    box-shadow: 2px 2px 2px #33AF84;
+    padding: 1em;
+  }
+  .desktopNone {
+    display: none;
+  }
+  /* size logo section presentation  */
+  .imgPresentation {
+    width: 5%;
+    height: auto;
+  }
+  p {
+    font-size: 1.3em;
+  }
+  /* size picture section photos */
+  .imgphotos {
+    width: 28%;
+    height: auto;
+  }
+  /* flex section desktop photos */
+  .leftCoPhoto {
+    width: 33%;
+    height: auto;
+    margin: 1em;
+    /* background-color: pink; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .rightCoPhoto {
+    width: 33%;
+    height: auto;
+    margin: 1em;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .centerPhoto {
+    width: 30%;
+    height: auto;
+    margin: 1em;
+    /* background-color: purple; */
+  }
+  .flexSpaceBetween {
+    justify-content: space-around;
+  }
+  /* size and positioning article projets html css section */
+  .articleProject {
+    width: 45%;
+  }
+  .flexArticleHtmlCss {
+    display: flex;
+    justify-content: space-around;
+    margin: 1em;
   }
 }
 
