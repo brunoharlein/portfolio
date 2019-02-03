@@ -160,7 +160,7 @@ main img {
 }
 /* image presentation user */
 .imgPresentation {
-  width: 13%;
+  width: 100%;
   height: auto;
 }
 .imgPresentationSql {
@@ -173,6 +173,34 @@ main img {
 }
 
 /**************************************** commun rules */
+/* flex section desktop photos */
+
+.leftCoPhoto {
+  width: 33%;
+  height: auto;
+  margin: 1em;
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rightCoPhoto {
+  width: 33%;
+  height: auto;
+  margin: 1em;
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.centerPhoto {
+  width: 30%;
+  height: auto;
+  margin: 1em;
+  /* background-color: purple; */
+}
+
+
 body {
   height: 100vh;
   display: flex;
@@ -213,7 +241,13 @@ main a i:hover, .desktopFlexMain a i:hover {
 li i {
   margin-bottom: 0.3em;
 }
+footer div {
+  margin-top: 1em;
+}
 footer {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
   /* height: 10%; */
   margin-top: 10%;
   border-top: 2px solid grey;
@@ -351,13 +385,13 @@ footer i {
   }
 /* logo picture section presentation */
   .imgPresentation {
-    width: 10%;
+    width: 100%;
     height: auto;
   }
-  .imgPresentationSql {
+  /* .imgPresentationSql {
     width: 15%;
     height: auto;
-  }
+  } */
 /* picture size section photos */
   .imgphotos {
     width: 45%;
@@ -435,7 +469,7 @@ footer i {
   }
   /* size logo section presentation  */
   .imgPresentation {
-    width: 6%;
+    width: 100%;
     height: auto;
   }
   .imgPresentationSql {
@@ -451,32 +485,8 @@ footer i {
     width: 28%;
     height: auto;
   }
-  /* flex section desktop photos */
-  .leftCoPhoto {
-    width: 33%;
-    height: auto;
-    margin: 1em;
-    /* background-color: pink; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .rightCoPhoto {
-    width: 33%;
-    height: auto;
-    margin: 1em;
-    /* background-color: yellow; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .centerPhoto {
-    width: 30%;
-    height: auto;
-    margin: 1em;
-    /* background-color: purple; */
-  }
   .flexSpaceBetween {
+    /* display: flex; */
     justify-content: space-around;
   }
   /* size and positioning article projets html css section */
@@ -496,6 +506,17 @@ footer i {
   .marginPresentation {
     margin-right: 2em;
   } */
+
+  /* .testBlock {
+    background-color: white;
+    height: auto; */
+
+  .testblock2 {
+    /* background-color: purple; */
+    width: 100%;
+  }
+
+  }
 }
 
 /* ==========================================================================
