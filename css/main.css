@@ -163,6 +163,11 @@ main img {
   width: 100%;
   height: auto;
 }
+.imgPresentationLogo {
+  width: 15%;
+  height: auto;
+}
+
 .imgPresentationSql {
   width: 17%;
   height: auto;
@@ -325,6 +330,10 @@ footer i {
     float: left;
     max-width: 50%;
   }
+  .imgPresentationLogo {
+    width: 10%;
+    height: auto;
+  }
   .mobileOnly {
     display: none;
   }
@@ -425,6 +434,10 @@ footer i {
   .desktopOnly {
     display: block;
   }
+  .imgPresentationLogo {
+    width: 8%;
+    height: auto;
+  }
   .tabDesktop {
     display: none;
   }
@@ -517,6 +530,22 @@ footer i {
   }
 
   }
+  @media screen and (min-width: 1200px) {
+
+    .imgPresentationLogo {
+      width: 6%;
+      height: auto;
+    }
+  }
+  @media screen and (min-width: 1400px) {
+
+    .imgPresentationLogo {
+      width: 5%;
+      height: auto;
+    }
+  }
+
+
 }
 
 /* ==========================================================================
